@@ -18,8 +18,6 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 ##### AI GPTs used Chat GPT
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
-Installed Arduino IDE and added the ESP32 board package
 Plugged in the ESP32-CAM but it was not detected at first
 Installed the CH341SER driver so the computer could recognize the board
 Selected "AI Thinker ESP32-CAM" as the board in Arduino IDE
@@ -32,7 +30,6 @@ Fixed wrong IP function (used WiFi.softAPIP instead of WiFi.localIP)
 Uploaded code again and opened Serial Monitor to debug
 Saw camera errors and checked configuration and hardware connections
 ## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
 Problem 1: ESP32-CAM WiFi not showing
 Cause: Code was still trying to connect to WiFi instead of creating one
 Solution: Replaced WiFi.begin() with WiFi.softAP() so ESP32 creates its own network
